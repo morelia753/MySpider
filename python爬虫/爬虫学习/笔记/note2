@@ -1,0 +1,14 @@
+
+
+     soup = BeautifulSoup("response.text","lxml")
+     soup.TagName
+     soup.find('TagName')
+     soup.find_all('TagName')
+     soup.find('TagName',class_/id=' ')
+     soup.select("某种选择器(id/class/标签等)"//返回的是一个列表
+     样例:soup.select(".tang")
+     select层级选择器: soup.select(.tang > ul > li)//.tang是标签
+                     soup.select(.tang > ul  a)//空格表示多层级
+     soup.a.get_text()/.text//获取所有文本数据
+     soup.a.string//获取直系文本数据
+
